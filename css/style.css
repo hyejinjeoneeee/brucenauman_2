@@ -1,0 +1,101 @@
+.row{
+  display: flex;
+  height: calc(100% - 207px);
+}
+
+.ab{
+  position: absolute;
+  width: 100%;
+}
+
+.col-1{
+  width: 50%;
+}
+
+.col-2{
+  width: 25%;
+  z-index: 1000px;
+}
+
+
+.move{
+  position: absolute;
+  animation: moving;
+
+  animation-duration: 20s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes moving {
+
+  0% {
+    left: 0%;
+  }
+    
+  50% {
+    left:calc(100% - 1450px);
+    
+  }
+  
+  100% {
+    left: 0%;
+  }
+  
+} 
+
+.xmove{
+  position: absolute;
+  right:0;
+  animation: xmoving;
+
+  animation-duration: 20s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes xmoving {
+
+  0% {
+    right: 0%;
+  }
+    
+  50% {
+    right:calc(100% - 1450px);
+  }
+  
+  100% {
+    right: 0%;
+  }
+  
+} 
+
+
+.appear{
+  position: absolute;
+  left: 243px;
+  filter: blur(11px);
+
+/*
+  animation: appear;
+
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes appear {
+
+  0% {
+    
+  }
+    
+  50% {
+    filter: invert;
+  }
+  
+  100% {
+    
+  }
+  */
+  
+}
